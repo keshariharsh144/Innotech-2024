@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,
+
+initial-scale=1.0">
+
+    <title> Login & Registration </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <link rel="stylesheet" type="text/css" href="login.css">
+
+</head>
+
+<body>
+    <header class="header" >
+        <a href="#" class="logo"> Quiz Realm.</a>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="form-wrapper sign-in">
+
+            <form action="index.html" method="get">
+
+                <h2>Log In</h2>
+
+                <div class="input-group">
+
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="">Username</label>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="">Password</label>
+                </div>
+
+                <div class="remember">
+
+                    <label><input type="checkbox"> Remember me</label>
+
+                </div>
+
+               <button type="submit" > Log in</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+            document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "harsh" && password === "1234") {
+                window.location.href = "index.html";
+            }
+            else if (username === "yash" && password === "123") {
+                window.location.href = "index.html";
+            }
+            else if (username === "priyanshu" && password === "12") {
+                window.location.href = "index.html";
+            }
+            else if (username === "vaibhav" && password === "1") {
+                window.location.href = "index.html";
+            }
+             else {
+                alert("Invalid login details");
+            }
+            });
+    </script>
+
+</body>
+
+</html>
